@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Madimi+One&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+}
+
+body{
+    background-color: #222;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+}
+
+
+/*======app===========*/
+
+.app {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.app__titel{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-shadow:7px 9px rgba(128, 128, 128, 0.222),
+                7px 9px rgba(128, 128, 128, 0.222);
+}
+
+.text{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.text p {
+    text-align: center;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    background-color: #22222252;
+}
+
+.phrase{
+    font-style: italic;
+}
+
+.btn{
+    background-color: rgb(228, 226, 226);
+    border: 2px solid gray ;
+    padding: 15px 45px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+    background-color: white;
+    
+}
+
+
+@media screen and (min-width:767px) {
+
+    .text p {
+        font-size: 1.5rem;
+    }
+    
+}
+
